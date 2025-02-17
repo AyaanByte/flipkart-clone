@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+
+}
+
+body {
+    background-color: #F0F5FF;
+
+}
+
+/* *******Header******** */
+header {
+    background-color: black;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Tomorrow", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+nav .logo {
+    align-content: center;
+    padding: 0 2vw;
+}
+
+
+/* *******Search******** */
+.search {
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    width: 40vw;
+    background-color: #F0F5FF;
+    color: black;
+    margin: 2vh;
+    border-radius: 4px;
+
+}
+
+.search input {
+
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    font-family: "Tomorrow", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    padding: 0 0.5vw;
+}
+
+/* *******Category******** */
+.container {
+
+    display: flex;
+    justify-content: center;
+    margin: 5px 1vw;
+    overflow: hidden;
+    padding: 0 1vw;
+
+
+}
+
+.card {
+
+    height: 20vh;
+
+    background-color: white;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: justify;
+    padding: 15px 25px;
+
+}
+
+/* Image Styling */
+.card-item img {
+    width: 5vw;
+    height: 8vh;
+    margin: 10px 0;
+
+
+}
+
+.card h2 {
+    font-size: smaller;
+    font-family: "Tomorrow", serif;
+
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* *******Slider******** */
+
+.slider-container {
+    position: relative;
+    height: 32vh;
+    margin: 10px 10px;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+
+
+}
+
+
+
+.slide img {
+    width: 100vw;
+    height: 29vh;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    padding: 2px;
+}
+
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 5px;
+    background: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: black;
+}
+
+
+/* *******Top Offer******** */
+
+.offer-container {
+    background-color: white;
+    margin: 15px 15px;
+    padding: 5px 10px;
+}
+
+.offer-container h2 {
+    background: transparent;
+    font-size: 1.5rem;
+    font-family: "Tomorrow", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.offers {
+
+    display: flex;
+    padding: 10px 0;
+    
+
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+
+    align-items: flex-start;
+    /* Aligns items at the top */
+    flex-wrap: wrap;
+    /* Ensures proper wrapping on smaller screens */
+
+
+}
+
+.offer-card {
+    margin: 5px 5px;
+    box-shadow: 0 1px 1px #4d1e1e;
+    width: 13%;
+    height: 33%;
+    background-color: #F0F5FF;
+    justify-items: center;
+
+    display: flex;
+    flex-direction: column;
+    /* Aligns content in a column */
+    align-items: center;
+    /* Centers image */
+
+}
+
+.offer-card p {
+    font-size: 0.7rem;
+    line-height: 1.4;
+    text-align: justify;
+    width: 90%;
+    /* Ensures text fills most of the card */
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-family: "Tomorrow", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.offer-item img {
+    height: 19vh;
+    width: 10vw;
+
+}
+
+.cont{
+    font-family: "Tomorrow", serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+    margin:15px 15px;
+    padding:10px 15px;
+}
+.cont h2{
+    margin: 5px 0;
+}
+
+.special-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.special-container-card{
+    margin:10px 10px;
+    padding: 10px 17px; 
+    
+    box-shadow: 0 0 1px #4d1e1e;
+}
+.special-container-card h3{
+ color: rgb(57, 150, 57);
+ font-size:medium;
+ font-weight: 500;
+ text-align: justify;
+ width: 90%;
+ 
+}
+.special-container-card p{
+ font-size:medium;
+ font-weight: 500;
+ width: 90%;
+
+ 
+}
+.special-card-item img{
+    width: 150px;
+    height: 180px;
+    margin:10px 10px;
+}
+
+footer {
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+
+}
