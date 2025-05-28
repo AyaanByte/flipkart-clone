@@ -7,7 +7,7 @@ A responsive **Flipkart Clone** built using simple **HTML**, **CSS**, and **Java
 
 ![Home Page](img/Flipkart_page-0001.jpg)  
 ![Home Page](img/Flipkart_page-0002.jpg)  
-*(Include screenshots of your project inside a `/screenshots` folder)*
+
 
 ---
 
